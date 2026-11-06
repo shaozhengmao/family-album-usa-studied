@@ -100,6 +100,9 @@ HF_ENDPOINT=https://hf-mirror.com python tools/align_timestamps.py --model small
 # 2. 合并进 episodes.json（先试运行，看报告没问题再加 --write）
 python tools/merge_alignment.py
 python tools/merge_alignment.py --write
+
+# 3. 计算前端提示所需的 timingSkew（语速上说不完的句子占比）
+python tools/check_timing.py --write
 ```
 
 结果：
@@ -108,7 +111,7 @@ python tools/merge_alignment.py --write
 |---|---|
 | 覆盖 | 78 / 78 幕，6319 / 6319 句 |
 | 完整性 | 0 缺失、0 重叠、0 越界 |
-| 平均命中率 | 0.914（中位 0.94） |
+| 平均命中率 | 0.917（中位 0.94） |
 | 命中率 ≥ 0.90 的幕 | 60 / 78 |
 
 ### 三条踩出来的经验
@@ -119,27 +122,55 @@ python tools/merge_alignment.py --write
 
 **三、`python3 -m http.server` 会让单句定位失效。** 它不响应 HTTP Range，浏览器把音频的 `seekable` 判定成 `[0, 0]`，于是给 `currentTime` 赋值会被静默丢弃。表现是：能播放，但循环、逐句、点句子跳转全部失灵，而且控制台一个报错都没有。本地预览必须用 `tools/dev_server.py`（补了 206 响应）。GitHub Pages 原生支持 Range，线上没这个问题。
 
-### 剩下 6 幕为什么还是不准
+### 命中率低 ≠ 时间戳不准
 
-先排除一个常见猜测：**不是音频缺失，也不是台词缺页**。6319 句全在，78 个 mp3 时长正常，编码参数（44.1kHz / 128kbps / 立体声）与其他 74 幕完全一致。
+这里有个容易混淆的地方，我自己先搞错过：`alignQuality` 是**平均词命中率**，衡量的是「whisper 有没有听出这些词」，不是「时间戳准不准」。这两件事需要分开看。
+
+6 幕命中率低于 0.80，但其中 4 幕的时间戳其实没问题：
+
+| 幕 | 命中率 | 时间戳实际情况 |
+|---|---|---|
+| ep4 Act II | 0.76 | 好的。满屏 `Nope.` / `Good.` / `Anytime.` 这类短句，转写时容易并进相邻句，命中率自然低；但句子密集、插值很准 |
+| ep18 Act II | 0.73 | 好的 |
+| ep19 Act II | 0.72 | 好的 |
+| ep19 Act III | 0.53 | 好的。婚礼有大段纯音乐与动作，台词表是连续的，中间自然留空 |
+| ep18 Act III | 0.74 | 原本是坏的，已修 |
+| ep19 Act I | 0.78 | 原本是坏的，已修 |
+
+真正的判据是语速的物理下限：**人再快也说不到 0.06 秒/词**。句长低于这个值，只可能是多句话被压进了同一个时间窗口。按这个口径，全站只剩 **1 幕**需要提示（ep9 Act II，79 句里有 4 句挤在一起）。
+
+### 重复台词抢锚点，以及怎么修的
+
+先排除两个错误猜测：**不是音频缺失，也不是台词缺页**。6319 句全在，78 个 mp3 时长正常，编码参数（44.1kHz / 128kbps / 立体声）与其他幕完全一致。
 
 真实原因是**台词表里有两段几乎相同的对白，把对齐锚点抢走了**。以 ep18 Act III 为例：这一幕音频开头是剧集导语加前情回顾，其中重播了一遍竞选广告词（`I care. I care about people, not things. Vote for me, Ellen Stewart.`）——而正片里的电视上又放了一遍。台词表把这两次都收了进来，第 0 句属于回顾，第 7 句属于正片。
 
-词级对齐按「最早出现的匹配」取锚点，于是把第 7 句钉在了回顾段（28.6 秒）；可排在它前面的第 1–6 句其实是正片内容，位置在 61–114 秒。锚点在前、内容在后，中间的句子只能往前挤，最后被压成 0.1–0.2 秒的窗口：
+原来的 `difflib` 递归取「最长匹配块」，按最早出现的匹配取锚点，于是把第 7 句钉在了回顾段（28.6 秒）；可排在它前面的第 1–6 句其实是正片内容，在 61–114 秒。锚点在前、内容在后，中间的句子只能往前挤，最后被压成 0.1–0.2 秒的窗口。
 
-| 台词 | 被标到 | 实际位置 |
-|---|---|---|
-| You were terrific. | 17.0s | 62.0s |
-| I like it… How can we possibly get it on… | 25.6s | 104.0s |
-| Mom is now on television… | 28.9s | 135.0s |
+换成 **token 级全局对齐（Needleman-Wunsch，带 gap 罚分）** 就解了：选中回顾段会让后面几十句无处安放，代价更高，因此自然收敛到正片段；而且映射天然严格单调，不可能出现逆序。
 
-（实际位置是用 whisper 单独转写该段核对的，不是估算。）
+| 台词 | 修前 | 修后 | 实际位置 |
+|---|---|---|---|
+| You were terrific. | 17.0s | 62.9s | 62.0s |
+| I like it… How can we possibly get it on… | 25.6s | 104.7s | 104.0s |
+| Mom is now on television… | 28.9s | 136.1s | 135.0s |
 
-所以那 13 句「零命中」不是句子丢了，而是时间戳错位到几十秒之外。连播完全不受影响，只有点单句时会跳错位置——这也是前端只在这几幕显示黄条、而不是藏掉台词的原因。
+ep18 Act III 整幕：命中率 0.50 → 0.74，零命中 13 句 → 2 句，语速上说不完的句子 12 句 → 2 句。剩下那 2 句是新闻转场的插播词，音频里本来就没有这段播报，误差不到 1 秒。
 
-ep4 Act II（0.76）是另一回事：那一幕有大量 `Hi.` / `Nope.` / `Anytime.` 这类一两个词的短句，转写时容易被并进相邻句，锚点不稳，属于短句固有难度。
+ep19 Act I 是同一个病，证据更直白：前 7 句被塞进 7 秒里。转写 62–69 秒那段，听到的是导语旁白在复述剧情（`...coming up in act one... im worried philip what if we cant tie the tie`），而正片对白在 136 秒之后。修完后前 7 句整体后移 71–96 秒，命中率 0.741 → 0.784。
 
-> 这一节的结论改过一次：早前把它归因为「音轨混入了剧情解说、与台词表不是同一版本，只能换音频源」。转写核对后证明判断错了——导语确实存在，但台词一句不缺，错的是锚点，换音频解决不了任何问题。
+只改了这 2 幕，其余 76 幕分毫未动——写回时用 `--act` 限定范围，避免拿旧的对齐产物覆盖本来正确的好数据。
+
+```bash
+# 只重跑指定幕，且改用全局对齐
+python tools/align_timestamps.py --act e18_a3 --method nw
+# 只写回这两幕
+python tools/merge_alignment.py --act e18_a3 --act e19_a1 --write
+# 重算前端提示
+python tools/check_timing.py --write
+```
+
+> 这一节改过两次结论。第一次归因为「音轨混入剧情解说、与台词表不是同一版本，只能换音频源」——转写核对后证明是错的。第二次说「6 幕都能修」——查完才发现只有 2 幕是压扁型错误，另外 4 幕时间戳本来就没问题，重跑只会把对的搞错。
 
 ---
 
@@ -186,6 +217,7 @@ family-album-usa-studied/
 ├── tools/
 │   ├── align_timestamps.py  # whisper 转写 + 与台词表强制对齐
 │   ├── merge_alignment.py   # 对齐结果合并进 episodes.json
+│   ├── check_timing.py      # 计算「时间戳可疑」标注（timingSkew）
 │   └── dev_server.py        # 支持 Range 的本地静态服务器
 ├── docs/                    # README 截图
 ├── .github/workflows/       # 推送 main 自动部署
@@ -204,6 +236,8 @@ family-album-usa-studied/
       "label": "Act I",
       "audio": "audio-acts/e01_a1.mp3",
       "alignQuality": 0.93,
+      "timingSkew": 0,
+      "timingBad": 0,
       "lines": [{
         "start": 12.80,
         "end": 16.00,
@@ -217,7 +251,8 @@ family-album-usa-studied/
 ```
 
 - `start` / `end`——对齐后的句级区间（秒，相对本幕音频），**实际使用这个**
-- `alignQuality`——本幕平均命中率，低于 0.8 时前端显示黄条
+- `timingSkew` / `timingBad`——语速上说不完的句子占比与句数（低于 0.06 秒/词），占比 ≥ 5% 时前端显示黄条
+- `alignQuality`——本幕平均词命中率，衡量 whisper 听出多少词。**它是诊断指标，不是时间戳准不准的指标**，短句多的幕天然偏低
 - `t`——原始时间戳，只作历史参考。它与实际音频严重不符，仅在某句缺 `start` 时兜底
 
 ---

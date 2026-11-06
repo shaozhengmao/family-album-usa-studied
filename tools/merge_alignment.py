@@ -23,6 +23,9 @@ def main():
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--min-match", type=float, default=0.3,
                     help="整幕平均命中率低于此值时仍然合并，但会在报告里标红")
+    ap.add_argument("--act", action="append", default=[], metavar="KEY",
+                    help="只处理指定幕（可重复），如 --act e18_a3。"
+                         "不给则处理全部——重跑单幕时务必带上，否则会拿旧的对齐产物覆盖其他幕。")
     args = ap.parse_args()
 
     data = json.loads((ROOT / "episodes.json").read_text())
@@ -33,6 +36,8 @@ def main():
     for ep in data["episodes"]:
         for act in ep["acts"]:
             key = Path(act["audio"]).stem
+            if args.act and key not in args.act:
+                continue
             fp = ALIGN / f"{key}.json"
             if not fp.exists():
                 missing.append(key)

@@ -620,7 +620,9 @@
             }
           ],
           "lineCount": 87,
-          "alignQuality": 0.93
+          "alignQuality": 0.93,
+          "timingSkew": 0.011,
+          "timingBad": 1
         },
         {
           "label": "Act II",
@@ -1048,7 +1050,9 @@
             }
           ],
           "lineCount": 60,
-          "alignQuality": 0.89
+          "alignQuality": 0.89,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -1903,7 +1907,9 @@
             }
           ],
           "lineCount": 121,
-          "alignQuality": 0.92
+          "alignQuality": 0.92,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 268
@@ -2332,7 +2338,9 @@
             }
           ],
           "lineCount": 59,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.017,
+          "timingBad": 1
         },
         {
           "label": "Act II",
@@ -2928,7 +2936,9 @@
             }
           ],
           "lineCount": 84,
-          "alignQuality": 0.9
+          "alignQuality": 0.9,
+          "timingSkew": 0.012,
+          "timingBad": 1
         },
         {
           "label": "Act III",
@@ -3601,7 +3611,9 @@
             }
           ],
           "lineCount": 95,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 238
@@ -4142,7 +4154,9 @@
             }
           ],
           "lineCount": 75,
-          "alignQuality": 0.92
+          "alignQuality": 0.92,
+          "timingSkew": 0.027,
+          "timingBad": 2
         },
         {
           "label": "Act II",
@@ -4710,7 +4724,9 @@
             }
           ],
           "lineCount": 80,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -5208,7 +5224,9 @@
             }
           ],
           "lineCount": 70,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 225
@@ -5672,7 +5690,9 @@
             }
           ],
           "lineCount": 64,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -6051,7 +6071,9 @@
             }
           ],
           "lineCount": 53,
-          "alignQuality": 0.76
+          "alignQuality": 0.76,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -6507,7 +6529,9 @@
             }
           ],
           "lineCount": 64,
-          "alignQuality": 0.88
+          "alignQuality": 0.88,
+          "timingSkew": 0.031,
+          "timingBad": 2
         }
       ],
       "totalLines": 181
@@ -7062,7 +7086,9 @@
             }
           ],
           "lineCount": 77,
-          "alignQuality": 0.95
+          "alignQuality": 0.95,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -7630,7 +7656,9 @@
             }
           ],
           "lineCount": 80,
-          "alignQuality": 0.89
+          "alignQuality": 0.89,
+          "timingSkew": 0.025,
+          "timingBad": 2
         },
         {
           "label": "Act III",
@@ -8198,7 +8226,9 @@
             }
           ],
           "lineCount": 80,
-          "alignQuality": 0.92
+          "alignQuality": 0.92,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 237
@@ -8830,7 +8860,9 @@
             }
           ],
           "lineCount": 88,
-          "alignQuality": 0.93
+          "alignQuality": 0.93,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -9244,7 +9276,9 @@
             }
           ],
           "lineCount": 58,
-          "alignQuality": 0.92
+          "alignQuality": 0.92,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -10036,7 +10070,9 @@
             }
           ],
           "lineCount": 112,
-          "alignQuality": 0.93
+          "alignQuality": 0.93,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 258
@@ -10577,7 +10613,9 @@
             }
           ],
           "lineCount": 75,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -11208,7 +11246,9 @@
             }
           ],
           "lineCount": 89,
-          "alignQuality": 0.95
+          "alignQuality": 0.95,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -12035,7 +12075,9 @@
             }
           ],
           "lineCount": 117,
-          "alignQuality": 0.95
+          "alignQuality": 0.95,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 281
@@ -12534,7 +12576,9 @@
             }
           ],
           "lineCount": 69,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -13249,7 +13293,9 @@
             }
           ],
           "lineCount": 101,
-          "alignQuality": 0.89
+          "alignQuality": 0.89,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -13782,7 +13828,9 @@
             }
           ],
           "lineCount": 75,
-          "alignQuality": 0.95
+          "alignQuality": 0.95,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 245
@@ -14456,7 +14504,9 @@
             }
           ],
           "lineCount": 94,
-          "alignQuality": 0.88
+          "alignQuality": 0.88,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -15017,7 +15067,9 @@
             }
           ],
           "lineCount": 79,
-          "alignQuality": 0.81
+          "alignQuality": 0.81,
+          "timingSkew": 0.051,
+          "timingBad": 4
         },
         {
           "label": "Act III",
@@ -15746,7 +15798,9 @@
             }
           ],
           "lineCount": 103,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 276
@@ -16406,7 +16460,9 @@
             }
           ],
           "lineCount": 92,
-          "alignQuality": 0.89
+          "alignQuality": 0.89,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -17065,7 +17121,9 @@
             }
           ],
           "lineCount": 93,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -17444,7 +17502,9 @@
             }
           ],
           "lineCount": 53,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 238
@@ -17999,7 +18059,9 @@
             }
           ],
           "lineCount": 77,
-          "alignQuality": 0.96
+          "alignQuality": 0.96,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -18777,7 +18839,9 @@
             }
           ],
           "lineCount": 110,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -19471,7 +19535,9 @@
             }
           ],
           "lineCount": 98,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 285
@@ -19928,7 +19994,9 @@
             }
           ],
           "lineCount": 63,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -20370,7 +20438,9 @@
             }
           ],
           "lineCount": 62,
-          "alignQuality": 0.95
+          "alignQuality": 0.95,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -21365,7 +21435,9 @@
             }
           ],
           "lineCount": 141,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.014,
+          "timingBad": 2
         }
       ],
       "totalLines": 266
@@ -22060,7 +22132,9 @@
             }
           ],
           "lineCount": 97,
-          "alignQuality": 0.89
+          "alignQuality": 0.89,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -22418,7 +22492,9 @@
             }
           ],
           "lineCount": 50,
-          "alignQuality": 0.91
+          "alignQuality": 0.91,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -22951,7 +23027,9 @@
             }
           ],
           "lineCount": 75,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 222
@@ -23618,7 +23696,9 @@
             }
           ],
           "lineCount": 93,
-          "alignQuality": 0.99
+          "alignQuality": 0.99,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -24452,7 +24532,9 @@
             }
           ],
           "lineCount": 118,
-          "alignQuality": 0.88
+          "alignQuality": 0.88,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -24915,7 +24997,9 @@
             }
           ],
           "lineCount": 65,
-          "alignQuality": 0.98
+          "alignQuality": 0.98,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 276
@@ -25484,7 +25568,9 @@
             }
           ],
           "lineCount": 79,
-          "alignQuality": 0.93
+          "alignQuality": 0.93,
+          "timingSkew": 0.013,
+          "timingBad": 1
         },
         {
           "label": "Act II",
@@ -25947,7 +26033,9 @@
             }
           ],
           "lineCount": 65,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -26389,7 +26477,9 @@
             }
           ],
           "lineCount": 62,
-          "alignQuality": 0.96
+          "alignQuality": 0.96,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 206
@@ -26986,7 +27076,9 @@
             }
           ],
           "lineCount": 83,
-          "alignQuality": 0.96
+          "alignQuality": 0.96,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -27400,7 +27492,9 @@
             }
           ],
           "lineCount": 58,
-          "alignQuality": 0.86
+          "alignQuality": 0.86,
+          "timingSkew": 0.017,
+          "timingBad": 1
         },
         {
           "label": "Act III",
@@ -28094,7 +28188,9 @@
             }
           ],
           "lineCount": 98,
-          "alignQuality": 0.89
+          "alignQuality": 0.89,
+          "timingSkew": 0.02,
+          "timingBad": 2
         }
       ],
       "totalLines": 239
@@ -28516,7 +28612,9 @@
             }
           ],
           "lineCount": 58,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -29021,7 +29119,9 @@
             }
           ],
           "lineCount": 71,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -29337,7 +29437,9 @@
             }
           ],
           "lineCount": 44,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 173
@@ -30193,7 +30295,9 @@
             }
           ],
           "lineCount": 120,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -30467,7 +30571,9 @@
             }
           ],
           "lineCount": 38,
-          "alignQuality": 0.73
+          "alignQuality": 0.73,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -30477,133 +30583,133 @@
               "t": 0,
               "en": "Ellen: …my slogan is”I care”. I care about people, not things, Vote for me, Ellen Stewart. I care. How was it?",
               "cn": "埃伦：……我的口号是「我关心」。我关心人，而不是事物。投埃伦·斯图尔特一票。我关心。怎么样？",
-              "start": 7.4,
-              "end": 15.94
+              "start": 44.48,
+              "end": 58.08
             },
             {
               "t": 0,
               "en": "Richard: You were terrific!",
               "cn": "理查德：你太棒了！",
-              "start": 16.96,
-              "end": 17.28
+              "start": 62.94,
+              "end": 63.54
             },
             {
               "t": 0,
               "en": "Ellen: Can I see it?",
               "cn": "埃伦：我能看看吗？",
-              "start": 19.16,
-              "end": 19.52
+              "start": 69.42,
+              "end": 71.4
             },
             {
               "t": 0,
               "en": "Richard: Sure.",
               "cn": "理查德：当然。",
-              "start": 19.52,
-              "end": 19.72
+              "start": 71.62,
+              "end": 71.84
             },
             {
               "t": 0,
               "en": "Ellen: Hello. My name is Ellen Stewart, and I’m running for the open seat on the school board. My slogan is”I care”. What does the word care mean?…I care about people, not things. Vote for me, Ellen Stewart. I care.",
               "cn": "埃伦：你好。我叫埃伦·斯图尔特，我竞选教委的空缺席位。我的口号是「我关心」。「关心」这个词是什么意思？……我关心人，而不是事物。投埃伦·斯图尔特一票。我关心。",
-              "start": 19.72,
-              "end": 25.64
+              "start": 77.68,
+              "end": 101.46
             },
             {
               "t": 0,
               "en": "Philip: I like it, but now what? How can we possibly get it on so Riverdale will see it and hear it?",
               "cn": "菲利普：我喜欢，但现在怎么办？我们怎么才能让里弗代尔的人看到、听到？",
-              "start": 25.64,
-              "end": 26.96
+              "start": 104.72,
+              "end": 113.04
             },
             {
               "t": 0,
               "en": "Richard: Leave it to me.",
               "cn": "理查德：交给我。",
-              "start": 28.28,
-              "end": 28.6
+              "start": 114.84,
+              "end": 116.02
             },
             {
               "t": 0,
               "en": "Ellen: …I mean that when I say”I care”. I care about people, not things. Vote for me, Ellen Stewart. I care.",
               "cn": "埃伦：……我的意思是当我说「我关心」时。我关心人，而不是事物。投埃伦·斯图尔特一票。我关心。",
-              "start": 28.6,
-              "end": 28.75
+              "start": 120.94,
+              "end": 133.02
             },
             {
               "t": 0,
               "en": "Marilyn: What happened?",
               "cn": "玛丽莲：怎么了？",
-              "start": 28.75,
-              "end": 28.9
+              "start": 135.02,
+              "end": 136.08
             },
             {
               "t": 0,
               "en": "Richard: Mom is now on television in every appliance store in Riverdale, except Hamlin's. He's a Boswell voter.",
               "cn": "理查德：妈妈现在在里弗代尔每家电器店的电视上都出现了，除了哈姆林家。他是博斯韦尔的支持者。",
-              "start": 28.9,
-              "end": 29.05
+              "start": 136.08,
+              "end": 143.74
             },
             {
               "t": 0,
               "en": "Philip: That’s a brilliant idea, Richard!",
               "cn": "菲利普：这个主意太妙了，理查德！",
-              "start": 29.05,
-              "end": 29.2
+              "start": 144.36,
+              "end": 145.76
             },
             {
               "t": 0,
               "en": "Grandpa: You inherited your father’s brains.",
               "cn": "爷爷：你继承了你爸爸的脑子。",
-              "start": 29.2,
-              "end": 29.35
+              "start": 146.38,
+              "end": 148.64
             },
             {
               "t": 0,
               "en": "Philip: We got our brains from you, Day.",
               "cn": "菲利普：我们的脑子都是从你那来的，爸。",
-              "start": 29.35,
-              "end": 29.55
+              "start": 149.48,
+              "end": 151.4
             },
             {
               "t": 0,
               "en": "Richard: And guess what? I called channel five. Their TV news is going to cover it.”Housewife campaigns in appliance stores.”And I’ll bet some magazine will pick up the story, too.",
               "cn": "理查德：你猜怎么着？我给五频道打了电话。他们的电视新闻会报道。「家庭主妇在电器店竞选。」我打赌某本杂志也会刊登这个故事。",
-              "start": 29.55,
-              "end": 29.74
+              "start": 151.98,
+              "end": 162.54
             },
             {
               "t": 0,
               "en": "Robbie: Mom, you’re going to win! I know it!",
               "cn": "罗比：妈妈，你会赢的！我知道！",
-              "start": 29.74,
-              "end": 30.1
+              "start": 163.28,
+              "end": 165.22
             },
             {
               "t": 0,
               "en": "Philip: Hold it, Robbie! Just cool down. I know we’re getting some attention now, but in the end the voters will have to decide.",
               "cn": "菲利普：等等，罗比！冷静。我知道我们现在受到了一些关注，但最终还是要由选民决定。",
-              "start": 30.1,
-              "end": 30.46
+              "start": 165.22,
+              "end": 173.76
             },
             {
               "t": 0,
               "en": "Grandpa: You’re going to win. Trust me!",
               "cn": "爷爷：你会赢的。相信我！",
-              "start": 30.46,
-              "end": 30.82
+              "start": 175.22,
+              "end": 177.68
             },
             {
               "t": 0,
               "en": "Reporter: In the hotly contested race for the one seat on the Riverdale School Board, Mrs. Ellen Stewart has taken an early lead.",
               "cn": "记者：在里弗代尔教委一个席位的激烈竞选中，埃伦·斯图尔特夫人已经取得早期领先。",
-              "start": 31.18,
-              "end": 38.64
+              "start": 180.38,
+              "end": 188.4
             },
             {
               "t": 0,
               "en": "Robbie: She’s winning! Mom, you’re winning!",
               "cn": "罗比：她赢了！妈妈，你赢了！",
-              "start": 165.84,
+              "start": 188.4,
               "end": 191.0
             },
             {
@@ -30674,7 +30780,7 @@
               "en": "Grandpa: You lost by only a hundred and twenty-one votes.",
               "cn": "爷爷：你只输了一百二十一票。",
               "start": 239.88,
-              "end": 243.78
+              "end": 242.64
             },
             {
               "t": 0,
@@ -30765,14 +30871,14 @@
               "en": "Maxwell: I’m going to do an article on”Ellen Stewart-she cares.”Maybe we’ll all care now. Good-bye.",
               "cn": "麦克斯韦：我要写一篇关于「埃伦·斯图尔特——她关心」的文章。也许我们现在都会关心了。再见。",
               "start": 329.46,
-              "end": 337.46
+              "end": 330.8
             },
             {
               "t": 0,
               "en": "Ellen: Thank you-and good-bye.",
               "cn": "埃伦：谢谢你——再见。",
               "start": 340.36,
-              "end": 343.02
+              "end": 340.96
             },
             {
               "t": 0,
@@ -30797,7 +30903,9 @@
             }
           ],
           "lineCount": 46,
-          "alignQuality": 0.5
+          "alignQuality": 0.74,
+          "timingSkew": 0.043,
+          "timingBad": 2
         }
       ],
       "totalLines": 204
@@ -30815,50 +30923,50 @@
               "t": 0,
               "en": "Harry: It looks wrong.",
               "cn": "哈里：看起来不对。",
-              "start": 62.5,
-              "end": 62.78
+              "start": 136.04,
+              "end": 137.24
             },
             {
               "t": 0,
               "en": "Philip: Hmmm. It is wrong.",
               "cn": "菲利普：嗯。是不对。",
-              "start": 68.04,
-              "end": 68.32
+              "start": 139.14,
+              "end": 140.52
             },
             {
               "t": 0,
               "en": "Richard: Are they always that difficult to make?",
               "cn": "理查德：它们总是这么难打吗？",
-              "start": 68.68,
-              "end": 68.92
+              "start": 140.52,
+              "end": 142.4
             },
             {
               "t": 0,
               "en": "Philip: The truth is…yes. I’ll try again.",
               "cn": "菲利普：说实话……是的。我再试试。",
-              "start": 68.92,
-              "end": 69.07
+              "start": 146.18,
+              "end": 146.92
             },
             {
               "t": 0,
               "en": "Robbie: At this rate, the wedding will take place tomorrow.",
               "cn": "罗比：照这个速度，婚礼要明天才举行了。",
-              "start": 69.07,
-              "end": 69.27
+              "start": 147.52,
+              "end": 149.56
             },
             {
               "t": 0,
               "en": "Philip: Not to worry. OK. Here we go.",
               "cn": "菲利普：别担心。好。开始。",
-              "start": 69.27,
-              "end": 69.42
+              "start": 149.84,
+              "end": 153.7
             },
             {
               "t": 0,
               "en": "Harry: I’m worried, Philip. What if we can’t tie the tie?",
               "cn": "哈里：我担心，菲利普。如果我们打不好领结怎么办？",
-              "start": 69.42,
-              "end": 73.7
+              "start": 165.48,
+              "end": 167.8
             },
             {
               "t": 0,
@@ -30934,7 +31042,7 @@
               "t": 0,
               "en": "Grandpa: I never could tie one of those…things…bow ties. I have always worn a clip-on bow tie.",
               "cn": "爷爷：我从不会打那种……东西……蝴蝶结。我一直戴夹式蝴蝶结。",
-              "start": 193.56,
+              "start": 198.74,
               "end": 201.34
             },
             {
@@ -31103,13 +31211,13 @@
               "en": "Philip: Didn’t you give them to Richard? He’s your best man. I remember. You gave them to Richard.",
               "cn": "菲利普：你不是给理查德了吗？他是你的伴郎。我记得。你给了理查德。",
               "start": 301.52,
-              "end": 306.64
+              "end": 306.4
             },
             {
               "t": 0,
               "en": "Richard: Oh, yeah. I remember now. You handed them to me. What did I do with them?",
               "cn": "理查德：哦，对。我现在想起来了。你递给我的。我放哪了？",
-              "start": 306.94,
+              "start": 306.4,
               "end": 311.74
             },
             {
@@ -31137,7 +31245,7 @@
               "t": 0,
               "en": "Harry: Oh, I forget. What time is it?",
               "cn": "哈里：哦，我忘了。几点了？",
-              "start": 322.86,
+              "start": 326.32,
               "end": 327.9
             },
             {
@@ -31166,7 +31274,7 @@
               "en": "Harry: No, NO, Robbie doesn’t have them. He gave them to me to hold on to them because he didn’t want the responsibility of holding them. I put them in my tuxedo but in the lapel pocket. That’s a relent. I was really worried.",
               "cn": "哈里：不，不，罗比没拿。他给我拿着，因为他不想承担拿着的责任。我放在燕尾服里，但放在领口袋里了。那是松了口气。我当时真的很担心。",
               "start": 337.58,
-              "end": 358.58
+              "end": 350.74
             },
             {
               "t": 0,
@@ -31242,12 +31350,14 @@
               "t": 0,
               "en": "Harry: I guess you’re right. Two hours from now. Two hours from now.",
               "cn": "哈里：我想你说得对。两小时后。两小时后。",
-              "start": 384.82,
-              "end": 414.18
+              "start": 402.9,
+              "end": 416.46
             }
           ],
           "lineCount": 62,
-          "alignQuality": 0.74
+          "alignQuality": 0.78,
+          "timingSkew": 0.016,
+          "timingBad": 1
         },
         {
           "label": "Act II",
@@ -31521,7 +31631,9 @@
             }
           ],
           "lineCount": 38,
-          "alignQuality": 0.72
+          "alignQuality": 0.72,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -31620,7 +31732,9 @@
             }
           ],
           "lineCount": 13,
-          "alignQuality": 0.53
+          "alignQuality": 0.53,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 113
@@ -32147,7 +32261,9 @@
             }
           ],
           "lineCount": 73,
-          "alignQuality": 0.9
+          "alignQuality": 0.9,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -32799,7 +32915,9 @@
             }
           ],
           "lineCount": 92,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -33591,7 +33709,9 @@
             }
           ],
           "lineCount": 112,
-          "alignQuality": 0.91
+          "alignQuality": 0.91,
+          "timingSkew": 0.027,
+          "timingBad": 3
         }
       ],
       "totalLines": 277
@@ -34132,7 +34252,9 @@
             }
           ],
           "lineCount": 75,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -34819,7 +34941,9 @@
             }
           ],
           "lineCount": 97,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.01,
+          "timingBad": 1
         },
         {
           "label": "Act III",
@@ -35387,7 +35511,9 @@
             }
           ],
           "lineCount": 80,
-          "alignQuality": 0.98
+          "alignQuality": 0.98,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 252
@@ -35844,7 +35970,9 @@
             }
           ],
           "lineCount": 63,
-          "alignQuality": 0.95
+          "alignQuality": 0.95,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -36762,7 +36890,9 @@
             }
           ],
           "lineCount": 130,
-          "alignQuality": 0.98
+          "alignQuality": 0.98,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -37449,7 +37579,9 @@
             }
           ],
           "lineCount": 97,
-          "alignQuality": 0.93
+          "alignQuality": 0.93,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 290
@@ -38116,7 +38248,9 @@
             }
           ],
           "lineCount": 93,
-          "alignQuality": 0.95
+          "alignQuality": 0.95,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -38705,7 +38839,9 @@
             }
           ],
           "lineCount": 83,
-          "alignQuality": 0.96
+          "alignQuality": 0.96,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -39287,7 +39423,9 @@
             }
           ],
           "lineCount": 82,
-          "alignQuality": 0.96
+          "alignQuality": 0.96,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 258
@@ -40087,7 +40225,9 @@
             }
           ],
           "lineCount": 112,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -40711,7 +40851,9 @@
             }
           ],
           "lineCount": 88,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.023,
+          "timingBad": 2
         },
         {
           "label": "Act III",
@@ -41167,7 +41309,9 @@
             }
           ],
           "lineCount": 64,
-          "alignQuality": 0.85
+          "alignQuality": 0.85,
+          "timingSkew": 0.016,
+          "timingBad": 1
         }
       ],
       "totalLines": 264
@@ -41834,7 +41978,9 @@
             }
           ],
           "lineCount": 93,
-          "alignQuality": 0.97
+          "alignQuality": 0.97,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -42507,7 +42653,9 @@
             }
           ],
           "lineCount": 95,
-          "alignQuality": 0.96
+          "alignQuality": 0.96,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act III",
@@ -43047,7 +43195,9 @@
             }
           ],
           "lineCount": 76,
-          "alignQuality": 0.92
+          "alignQuality": 0.92,
+          "timingSkew": 0.013,
+          "timingBad": 1
         }
       ],
       "totalLines": 264
@@ -43875,7 +44025,9 @@
             }
           ],
           "lineCount": 116,
-          "alignQuality": 0.95
+          "alignQuality": 0.95,
+          "timingSkew": 0.0,
+          "timingBad": 0
         },
         {
           "label": "Act II",
@@ -44520,7 +44672,9 @@
             }
           ],
           "lineCount": 91,
-          "alignQuality": 0.94
+          "alignQuality": 0.94,
+          "timingSkew": 0.011,
+          "timingBad": 1
         },
         {
           "label": "Act III",
@@ -45060,7 +45214,9 @@
             }
           ],
           "lineCount": 76,
-          "alignQuality": 0.93
+          "alignQuality": 0.93,
+          "timingSkew": 0.0,
+          "timingBad": 0
         }
       ],
       "totalLines": 283

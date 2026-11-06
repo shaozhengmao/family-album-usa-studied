@@ -1038,7 +1038,12 @@ function renderDetail() {
   const act = ep.acts[currentActIdx];
   const ai = currentActIdx;
   const hasAudio = act.hasAudio !== false && act.audio;
-  const lowQuality = (act.alignQuality != null && act.alignQuality < 0.8);
+  // 判据是「语速上说不完的句子占比」，不是词命中率。alignQuality 衡量的是 whisper
+  // 有没有听出这些词，不是时间戳准不准：短句多的幕（Nope. / Good.）命中率天然低，
+  // 时间戳却是对的，用它会冤枉好数据。低于 0.06 秒/词物理上说不完，只可能是多句被
+  // 压进了同一时间窗口——那才真正影响单句定位。
+  const timingBad = act.timingBad || 0;
+  const lowQuality = (act.timingSkew || 0) >= 0.05;
   html += `<div class="act-block" id="act-block-${ai}">`;
   html += `
     <div class="act-header">
@@ -1087,7 +1092,7 @@ function renderDetail() {
           </button>
         </div>
         <div class="blind-tip">盲听中 · 点任意一句即揭晓并从那句开始播，再点一次收回；时间码已淡化但不隐藏</div>
-        ${lowQuality ? `<div class="align-warn">⚠ 本幕音频与台词表的对应关系较差（对齐置信度 ${Math.round(act.alignQuality * 100)}%），常见原因是音轨里混入了剧情解说或与台词表不是同一版本。连播不受影响，单句定位可能不准。</div>` : ''}
+        ${lowQuality ? `<div class="align-warn">⚠ 本幕有 ${timingBad} 句的时间戳不可靠——句子被压进了过短的时间窗口，点这些句子可能播到前一句或后一句。连播不受影响。</div>` : ''}
         <div class="audio-error" id="audio-error-${ai}">
           ⚠ 音频加载失败，请检查 <code>${act.audio}</code> 是否存在。
         </div>
