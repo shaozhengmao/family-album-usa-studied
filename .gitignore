@@ -29,3 +29,7 @@ audio-downloads/
 
 # 日志
 *.log
+
+# 时间戳对齐中间产物（合并进 episodes.json 后不需要入库）
+align_out/
+episodes.json.bak
