@@ -94,8 +94,9 @@ def main():
         if not bak.exists():
             shutil.copy2(ROOT / "episodes.json", bak)
             print("已备份原文件 -> episodes.json.bak")
+        # 保持 2 空格缩进：压成一行会让每次合并产生上万行假 diff，后续改动无法 review
         (ROOT / "episodes.json").write_text(
-            json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n")
         print("已写入 episodes.json")
     else:
         print("\n(试运行，未写入。加 --write 生效)")
